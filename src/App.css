@@ -1,38 +1,57 @@
-.App {
+.main {
+  width: 70%;
+  margin: auto;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.names-container {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-direction: row;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  flex-wrap: wrap;
 }
 
-.App-link {
-  color: #61dafb;
+.input {
+  display: inline-block;
+  width: 50%;
+  margin-bottom: 20px;
+  padding: 15px;
+  border: 1px solid lightgray;
+  border-radius: 10px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.favourites {
+  padding: 12px;
+  width: 100%;
+  margin-bottom: 10px;
+  text-align: left;
+  border-bottom: 2px solid lightgray;
+}
+
+.title {
+  font-size: large;
+  color: lightgray;
+}
+
+.name-label {
+  cursor: pointer;
+  display: inline-block;
+  padding: 12px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
+.name-label:hover {
+  background-color: azure;
+  color: brown;
+}
+
+.boy-name {
+  background-color: lightblue;
+  color: darkblue;
+}
+
+.girl-name {
+  background-color: pink;
+  color: darkorchid;
 }
