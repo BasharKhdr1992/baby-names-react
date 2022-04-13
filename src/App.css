@@ -28,6 +28,12 @@
   border-bottom: 2px solid lightgray;
 }
 
+.radio {
+  margin-bottom: 10px;
+  text-align: center;
+  padding: 15px;
+}
+
 .title {
   font-size: large;
   color: lightgray;
