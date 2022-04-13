@@ -2,14 +2,16 @@ import './App.css';
 import namesList from './data/names';
 import CustomSpan from './CustomSpan';
 import Input from './Input';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { compare } from './utils';
 
 const App = () => {
-  const [names, setNames] = useState(namesList);
+  const [names, setNames] = useState([]);
   const [gender, setGender] = useState('a');
   const [searchVal, setSearchVal] = useState('');
   const [favourites, setFavourites] = useState([]);
+
+  useEffect(() => setNames(namesList), []);
 
   const handleInput = (e) => {
     setSearchVal(e.target.value);
